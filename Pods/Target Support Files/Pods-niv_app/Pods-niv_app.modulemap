@@ -1,0 +1,6 @@
+framework module Pods_niv_app {
+  umbrella header "Pods-niv_app-umbrella.h"
+
+  export *
+  module * { export * }
+}

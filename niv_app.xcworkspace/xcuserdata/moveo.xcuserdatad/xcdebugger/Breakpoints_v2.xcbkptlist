@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "40FB4734-E660-425F-ADA3-72E7649B7F8A"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DA4F0B93-FA14-4F1C-B0B9-E7E3C598A12D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "niv_app/ViewController/HomeScreenViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "5"
+            endingLineNumber = "5"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E482B73B-A433-4EF0-B208-8C4A21832A14"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "niv_app/ViewController/HomeScreenViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "HomeScreenViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "E482B73B-A433-4EF0-B208-8C4A21832A14 - ad2c267eee64f06d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "niv_app.HomeScreenViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; niv_app.HomeScreenViewController"
+                  moduleName = "niv_app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/moveo/Desktop/niv_app/niv_app/ViewController/HomeScreenViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "E482B73B-A433-4EF0-B208-8C4A21832A14 - 96f4f6f1b04fd056"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "niv_app.HomeScreenViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; niv_app.HomeScreenViewController"
+                  moduleName = "niv_app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/moveo/Desktop/niv_app/niv_app/ViewController/HomeScreenViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "197">
+               </Location>
+               <Location
+                  uuid = "E482B73B-A433-4EF0-B208-8C4A21832A14 - 91781a2cb74d684a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "niv_app.HomeScreenViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;niv_app.HomeScreenViewController&gt;"
+                  moduleName = "niv_app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/moveo/Desktop/niv_app/niv_app/ViewController/HomeScreenViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "E482B73B-A433-4EF0-B208-8C4A21832A14 - 2ab3292b01e2c80f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "niv_app.HomeScreenViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;niv_app.HomeScreenViewController&gt;"
+                  moduleName = "niv_app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/moveo/Desktop/niv_app/niv_app/ViewController/HomeScreenViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "153">
+               </Location>
+               <Location
+                  uuid = "E482B73B-A433-4EF0-B208-8C4A21832A14 - b2ce84c2e99ae6d4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "niv_app.HomeScreenViewController.__deallocating_deinit"
+                  moduleName = "niv_app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/moveo/Desktop/niv_app/niv_app/ViewController/HomeScreenViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4A1FF0DD-2B73-48B9-A6D9-7E7FC7306966"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "niv_app/ViewController/HomeScreenViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "HomeScreenViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "4A1FF0DD-2B73-48B9-A6D9-7E7FC7306966 - 850fe2c1d33a32c5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "niv_app.HomeScreenViewController.cardTableView.getter : Swift.Optional&lt;__C.UITableView&gt;"
+                  moduleName = "niv_app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/moveo/Desktop/niv_app/niv_app/ViewController/HomeScreenViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "4A1FF0DD-2B73-48B9-A6D9-7E7FC7306966 - fdefba6e5e7846c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "niv_app.HomeScreenViewController.cardTableView.setter : Swift.Optional&lt;__C.UITableView&gt;"
+                  moduleName = "niv_app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/moveo/Desktop/niv_app/niv_app/ViewController/HomeScreenViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "4A1FF0DD-2B73-48B9-A6D9-7E7FC7306966 - 55f38b51a886889c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "niv_app.HomeScreenViewController.cardTableView.modify : Swift.Optional&lt;__C.UITableView&gt;"
+                  moduleName = "niv_app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/moveo/Desktop/niv_app/niv_app/ViewController/HomeScreenViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "4A1FF0DD-2B73-48B9-A6D9-7E7FC7306966 - 9bd2860dcad5fdf9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "niv_app.HomeScreenViewController.cardTableView.modify : Swift.Optional&lt;__C.UITableView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "niv_app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/moveo/Desktop/niv_app/niv_app/ViewController/HomeScreenViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "4A1FF0DD-2B73-48B9-A6D9-7E7FC7306966 - 96f4f6f1b04fd056"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "niv_app.HomeScreenViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; niv_app.HomeScreenViewController"
+                  moduleName = "niv_app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/moveo/Desktop/niv_app/niv_app/ViewController/HomeScreenViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "197">
+               </Location>
+               <Location
+                  uuid = "4A1FF0DD-2B73-48B9-A6D9-7E7FC7306966 - 2ab3292b01e2c80f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "niv_app.HomeScreenViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;niv_app.HomeScreenViewController&gt;"
+                  moduleName = "niv_app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/moveo/Desktop/niv_app/niv_app/ViewController/HomeScreenViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "153">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5F15798A-0AD5-4997-A80B-4CBED0857A77"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "niv_app/ViewController/HomeScreenViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "images"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

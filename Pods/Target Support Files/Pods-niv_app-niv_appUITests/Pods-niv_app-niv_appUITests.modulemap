@@ -1,0 +1,6 @@
+framework module Pods_niv_app_niv_appUITests {
+  umbrella header "Pods-niv_app-niv_appUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

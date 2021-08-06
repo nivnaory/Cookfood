@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class Utilities {
+class Utilities  {
     
     static func styleTextField(_ textfield:UITextField) {
         
@@ -49,7 +49,7 @@ class Utilities {
         
         
         //check if the stirng has at least 6 number
-        if (password.count<5){
+        if (password.count<PASSWORD_LENGTH){
             return false
         }
         //let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])[A-Za-z\\d$@$#!%*?&]{8,}")
@@ -58,4 +58,6 @@ class Utilities {
         return true
     }
     
+
+   
 }
