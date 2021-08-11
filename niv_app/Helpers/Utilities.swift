@@ -15,9 +15,7 @@ class Utilities  {
         
         // Create the bottom line
         let bottomLine = CALayer()
-        
         bottomLine.frame = CGRect(x: 0, y: textfield.frame.height - 2, width: textfield.frame.width, height: 2)
-        
         bottomLine.backgroundColor = UIColor.init(red: 48/255, green: 173/255, blue: 99/255, alpha: 1).cgColor
         
         // Remove border on text field
@@ -46,8 +44,6 @@ class Utilities  {
     }
     
     static func isPasswordValid(_ password : String) -> Bool {
-        
-        
         //check if the stirng has at least 6 number
         if (password.count<PASSWORD_LENGTH){
             return false
@@ -56,8 +52,20 @@ class Utilities  {
     
         //return passwordTest.evaluate(with: password)
         return true
+ }
+    static func styleTextView(_ textView:UITextView) {
+        let borderColor : UIColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1.0)
+        textView.layer.borderWidth = 1.5
+        textView.layer.borderColor = borderColor.cgColor
+        textView.layer.cornerRadius = 9.0
+        
+    }
+    static func styleImageView(_ imageView:UIImageView){
+        let borderColor : UIColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1.0)
+        imageView.layer.borderWidth = 3.5
+        imageView.layer.borderColor = borderColor.cgColor
+        imageView.layer.cornerRadius = 15.0
     }
     
-
-   
+  
 }

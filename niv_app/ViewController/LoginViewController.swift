@@ -14,7 +14,10 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var PasswordTextField: UITextField!
     
     
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setUpElements();
+    }
     @IBAction func LoginButton(_ sender: Any) {
         let email=EmailTextField.text!.trimmingCharacters(in: .whitespaces);
         let password=PasswordTextField.text!.trimmingCharacters(in: .whitespaces);
@@ -32,15 +35,11 @@ class LoginViewController: UIViewController {
         }
      
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        setUpElements();
-    }
+   
     func setUpElements(){
        Utilities.styleTextField(EmailTextField);
        Utilities.styleTextField(PasswordTextField);
-        Utilities.styleFilledButton(LoginButton)
+      Utilities.styleFilledButton(LoginButton)
 
 
    }

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		68BEEF9E04035AF68803DF5D /* Pods_niv_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10EAEE91F7AC897B4BCD9C54 /* Pods_niv_app.framework */; };
 		7B2172DA26AC81AE00B28D5D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B2172D926AC81AD00B28D5D /* GoogleService-Info.plist */; };
-		7B63610026A6E91A005D1F5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6360FF26A6E91A005D1F5D /* AppDelegate.swift */; };
 		7B63610226A6E91A005D1F5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B63610126A6E91A005D1F5D /* SceneDelegate.swift */; };
 		7B63610426A6E91A005D1F5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B63610326A6E91A005D1F5D /* ViewController.swift */; };
 		7B63610726A6E91A005D1F5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B63610526A6E91A005D1F5D /* Main.storyboard */; };
@@ -22,7 +21,10 @@
 		7B6F90F426ACAF4D00A5485A /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B63613B26A7089D005D1F5D /* Utilities.swift */; };
 		7B7828DE26B4205600082121 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7828DD26B4205600082121 /* Constant.swift */; };
 		7B86519326B81A03005D5AC3 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B86519226B81A03005D5AC3 /* HomeScreenViewController.swift */; };
+		7BA3710F26BD91E2006C8C13 /* AddRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA3710E26BD91E2006C8C13 /* AddRecipeViewController.swift */; };
 		7BC994F026B835BC00DA38B4 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC994EF26B835BC00DA38B4 /* CardCell.swift */; };
+		7BFA292526C276260049EF33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA292426C276260049EF33 /* AppDelegate.swift */; };
+		7BFA292926C28E6A0049EF33 /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA292826C28E6A0049EF33 /* RecipeViewController.swift */; };
 		D25137329DA6A131577C4098 /* Pods_niv_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C733B54D0FEF319CCC2F26 /* Pods_niv_appTests.framework */; };
 		DA6DA19AEC9DB27332743C5B /* Pods_niv_app_niv_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8F7138CB9D54C3F8ED8C2FB /* Pods_niv_app_niv_appUITests.framework */; };
 /* End PBXBuildFile section */
@@ -52,7 +54,6 @@
 		5ECABB42C9A18E3E4E491BC5 /* Pods-niv_app-niv_appUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-niv_app-niv_appUITests.release.xcconfig"; path = "Target Support Files/Pods-niv_app-niv_appUITests/Pods-niv_app-niv_appUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7B2172D926AC81AD00B28D5D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7B6360FC26A6E91A005D1F5D /* niv_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = niv_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B6360FF26A6E91A005D1F5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B63610126A6E91A005D1F5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7B63610326A6E91A005D1F5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7B63610626A6E91A005D1F5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,7 +71,10 @@
 		7B63613B26A7089D005D1F5D /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		7B7828DD26B4205600082121 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		7B86519226B81A03005D5AC3 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		7BA3710E26BD91E2006C8C13 /* AddRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipeViewController.swift; sourceTree = "<group>"; };
 		7BC994EF26B835BC00DA38B4 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		7BFA292426C276260049EF33 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7BFA292826C28E6A0049EF33 /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 		9288AE5BEF4ECD955BC3B2A1 /* Pods-niv_app-niv_appUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-niv_app-niv_appUITests.debug.xcconfig"; path = "Target Support Files/Pods-niv_app-niv_appUITests/Pods-niv_app-niv_appUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B5AA2AA0FF36F364D930D4F6 /* Pods-niv_appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-niv_appTests.debug.xcconfig"; path = "Target Support Files/Pods-niv_appTests/Pods-niv_appTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C1EB5F1269EF66AE0A788D4A /* Pods-niv_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-niv_app.release.xcconfig"; path = "Target Support Files/Pods-niv_app/Pods-niv_app.release.xcconfig"; sourceTree = "<group>"; };
@@ -143,7 +147,7 @@
 			children = (
 				7B63613A26A70883005D1F5D /* Helpers */,
 				7B63612F26A6E94B005D1F5D /* ViewController */,
-				7B6360FF26A6E91A005D1F5D /* AppDelegate.swift */,
+				7BFA292426C276260049EF33 /* AppDelegate.swift */,
 				7B63610126A6E91A005D1F5D /* SceneDelegate.swift */,
 				7B63610526A6E91A005D1F5D /* Main.storyboard */,
 				7B63610A26A6E91B005D1F5D /* LaunchScreen.storyboard */,
@@ -179,6 +183,8 @@
 				7B63613026A6E969005D1F5D /* SignUpViewController.swift */,
 				7B63613226A6E976005D1F5D /* LoginViewController.swift */,
 				7BC994EF26B835BC00DA38B4 /* CardCell.swift */,
+				7BA3710E26BD91E2006C8C13 /* AddRecipeViewController.swift */,
+				7BFA292826C28E6A0049EF33 /* RecipeViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -446,12 +452,14 @@
 			files = (
 				7B63610426A6E91A005D1F5D /* ViewController.swift in Sources */,
 				7B86519326B81A03005D5AC3 /* HomeScreenViewController.swift in Sources */,
-				7B63610026A6E91A005D1F5D /* AppDelegate.swift in Sources */,
+				7BA3710F26BD91E2006C8C13 /* AddRecipeViewController.swift in Sources */,
 				7B6F90F426ACAF4D00A5485A /* Utilities.swift in Sources */,
 				7B7828DE26B4205600082121 /* Constant.swift in Sources */,
+				7BFA292926C28E6A0049EF33 /* RecipeViewController.swift in Sources */,
 				7B63613126A6E969005D1F5D /* SignUpViewController.swift in Sources */,
 				7B63613326A6E976005D1F5D /* LoginViewController.swift in Sources */,
 				7B63610226A6E91A005D1F5D /* SceneDelegate.swift in Sources */,
+				7BFA292526C276260049EF33 /* AppDelegate.swift in Sources */,
 				7BC994F026B835BC00DA38B4 /* CardCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
