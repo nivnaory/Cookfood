@@ -13,6 +13,16 @@ class UserController{
         userDB=Firestore.firestore().collection("users");
     }
     
+    
+    func setUserInDB(email:String,username:String){
+        self.userDB.addDocument(data:["username": username,"Email":email]){(error) in
+        if error != nil {
+                    print("Errror");
+                }else{
+                    print("trasition to home screen");
+            }
+        }
+    }
     func getUserFromDB(userEmail:String)   ->User{ 
         let user=User(email: "", name:"")
         self.userDB.whereField("Email", isEqualTo: userEmail)             .getDocuments() { (querySnapshot, err)  in

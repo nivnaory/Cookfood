@@ -9,6 +9,7 @@ import UIKit
 import FirebaseAuth
 import Toast_Swift
 class LoginViewController: UIViewController {
+    
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
@@ -33,5 +34,10 @@ class LoginViewController: UIViewController {
             }
            
         }
+    }
+    @IBAction func signUpPress(_ sender: Any) {
+        let  vc = self.storyboard?.instantiateViewController(identifier: "signUp") as!  SignUpViewController
+        vc.modalPresentationStyle = .formSheet
+        self.present(vc ,animated:true);
     }
 }
