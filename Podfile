@@ -11,8 +11,8 @@ target 'niv_app' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Firestore'
   pod 'Toast-Swift', '~> 5.0.1'
-
-   
+  pod 'Firebase/Storage'
+	   
 
  
   target 'niv_appTests' do

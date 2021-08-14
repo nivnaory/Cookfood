@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		68BEEF9E04035AF68803DF5D /* Pods_niv_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10EAEE91F7AC897B4BCD9C54 /* Pods_niv_app.framework */; };
+		7B09250F26C3D0C5006BA49D /* recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B09250E26C3D0C5006BA49D /* recipe.swift */; };
+		7B09251126C3D147006BA49D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B09251026C3D147006BA49D /* User.swift */; };
+		7B09251626C3EC0D006BA49D /* RecipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B09251526C3EC0D006BA49D /* RecipeController.swift */; };
+		7B09251A26C7BB1A006BA49D /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B09251926C7BB1A006BA49D /* UserController.swift */; };
 		7B2172DA26AC81AE00B28D5D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B2172D926AC81AD00B28D5D /* GoogleService-Info.plist */; };
 		7B63610226A6E91A005D1F5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B63610126A6E91A005D1F5D /* SceneDelegate.swift */; };
 		7B63610426A6E91A005D1F5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B63610326A6E91A005D1F5D /* ViewController.swift */; };
@@ -52,6 +56,10 @@
 		4DFF00C1DCDA961FDFD08227 /* Pods-niv_appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-niv_appTests.release.xcconfig"; path = "Target Support Files/Pods-niv_appTests/Pods-niv_appTests.release.xcconfig"; sourceTree = "<group>"; };
 		4FA056F8EA39E872EA689A42 /* Pods-niv_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-niv_app.debug.xcconfig"; path = "Target Support Files/Pods-niv_app/Pods-niv_app.debug.xcconfig"; sourceTree = "<group>"; };
 		5ECABB42C9A18E3E4E491BC5 /* Pods-niv_app-niv_appUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-niv_app-niv_appUITests.release.xcconfig"; path = "Target Support Files/Pods-niv_app-niv_appUITests/Pods-niv_app-niv_appUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7B09250E26C3D0C5006BA49D /* recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipe.swift; sourceTree = "<group>"; };
+		7B09251026C3D147006BA49D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7B09251526C3EC0D006BA49D /* RecipeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeController.swift; sourceTree = "<group>"; };
+		7B09251926C7BB1A006BA49D /* UserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 		7B2172D926AC81AD00B28D5D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7B6360FC26A6E91A005D1F5D /* niv_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = niv_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B63610126A6E91A005D1F5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +127,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7B09251326C3E942006BA49D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7B09251926C7BB1A006BA49D /* UserController.swift */,
+				7B09251526C3EC0D006BA49D /* RecipeController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7B09251426C3E978006BA49D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7B09250E26C3D0C5006BA49D /* recipe.swift */,
+				7B09251026C3D147006BA49D /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		7B6360F326A6E91A005D1F5D = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +171,8 @@
 		7B6360FE26A6E91A005D1F5D /* niv_app */ = {
 			isa = PBXGroup;
 			children = (
+				7B09251426C3E978006BA49D /* Models */,
+				7B09251326C3E942006BA49D /* Controller */,
 				7B63613A26A70883005D1F5D /* Helpers */,
 				7B63612F26A6E94B005D1F5D /* ViewController */,
 				7BFA292426C276260049EF33 /* AppDelegate.swift */,
@@ -450,15 +478,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B09251126C3D147006BA49D /* User.swift in Sources */,
 				7B63610426A6E91A005D1F5D /* ViewController.swift in Sources */,
 				7B86519326B81A03005D5AC3 /* HomeScreenViewController.swift in Sources */,
 				7BA3710F26BD91E2006C8C13 /* AddRecipeViewController.swift in Sources */,
+				7B09250F26C3D0C5006BA49D /* recipe.swift in Sources */,
 				7B6F90F426ACAF4D00A5485A /* Utilities.swift in Sources */,
 				7B7828DE26B4205600082121 /* Constant.swift in Sources */,
 				7BFA292926C28E6A0049EF33 /* RecipeViewController.swift in Sources */,
 				7B63613126A6E969005D1F5D /* SignUpViewController.swift in Sources */,
+				7B09251626C3EC0D006BA49D /* RecipeController.swift in Sources */,
 				7B63613326A6E976005D1F5D /* LoginViewController.swift in Sources */,
 				7B63610226A6E91A005D1F5D /* SceneDelegate.swift in Sources */,
+				7B09251A26C7BB1A006BA49D /* UserController.swift in Sources */,
 				7BFA292526C276260049EF33 /* AppDelegate.swift in Sources */,
 				7BC994F026B835BC00DA38B4 /* CardCell.swift in Sources */,
 			);
@@ -643,6 +675,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "niv-naory.niv-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -662,6 +695,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "niv-naory.niv-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

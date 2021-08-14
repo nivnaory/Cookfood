@@ -65,6 +65,8 @@ class SignUpViewController: UIViewController {
                     print("trasition to home screen");
                 }
             }
+        
+        
     }
 
     func validateFiled()-> Bool{

@@ -20,6 +20,8 @@ class HomeScreenViewController: UIViewController,UITableViewDelegate,UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    
+        
         // Do any additional setup after loading the v iew.
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -41,6 +43,8 @@ class HomeScreenViewController: UIViewController,UITableViewDelegate,UITableView
         present(vc ,animated:true);
        // vc.recipeImageView.image = images[indexPath.row];
         //vc.recipeTitleLabel.text=titles[indexPath.row];
+        //vc.username
+        //vc.useremail
         
         
     }
