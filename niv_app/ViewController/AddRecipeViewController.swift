@@ -57,20 +57,24 @@ class AddRecipeViewController: UIViewController,UIImagePickerControllerDelegate,
     */
     @IBAction func addButtonTap(_ sender: Any)    {
         
-         let currentUserEmail = (Firebase.Auth.auth().currentUser?.email)!
-        let user = userController.getUserFromDB(userEmail:currentUserEmail)
         //check that all field are not empty.
         if(!checkFeild()){
             return;
         }
-       
-        if(!recipeController.setRecipeInDB(image:imageView.image!,title:titleTextField.text!, description: descriptionTextView.text,userName:"niv")){
-           self.view.makeToast(RECIPE_ERROR);
-        }else{
-            self.view.makeToast(RECIPE_SAVED);
+          let  currentUserEmail = (Firebase.Auth.auth().currentUser?.email)!
+        //get the current username from the db
+        userController.getUserFromDB(userEmail:currentUserEmail) { user, error in
+            if let  error = error {
+                self.view.makeToast(RECIPE_ERROR);
+             }
+              else{
+                if(!self.recipeController.setRecipeInDB(image:self.imageView.image!,title:self.titleTextField.text!, description:self.descriptionTextView.text,creator:user!.getName(),userEmail: user!.getEmail())){
+                   self.view.makeToast(RECIPE_ERROR);
+                }else{
+                    self.view.makeToast(RECIPE_SAVED);
+                }
+            }
         }
-        
-        //userController.AddRecipe(user,recipe)
     }
     
     func checkFeild()-> Bool{
@@ -87,11 +91,3 @@ class AddRecipeViewController: UIViewController,UIImagePickerControllerDelegate,
         return true;
     }
 }
-//         db.collection("user").collection(recipes).addDocument(data:["fullName":                      user.fullName,"Email":user.email,image:NewRecipe.image,recipe:newRecipe.des]){(error) in
-//         if error != nil {
-//                     print("Errror");
-//                 }else{
-//                     print("trasition to home screen");
-//            }
-//
-

@@ -10,14 +10,19 @@ class Recipe {
      //var image:UIImage
      private var  title:String
      private var  description:String
-     private var creatorName:String
+     private var  creatorName:String
+     private var  creatorEmail:String
+    private var   imageUrl:String
 
     
-    init(image:UIImage,title:String,description:String,creatorName:String) {
-      //  self.image = image;
+
+    
+    init(title:String,description:String,creatorName:String,creatorEmail:String,imageUrl:String) {
         self.title = title
         self.description = description
         self.creatorName = creatorName
+        self.creatorEmail=creatorEmail
+        self.imageUrl=imageUrl
     }
 
     public func getTitle() ->String{
@@ -28,5 +33,8 @@ class Recipe {
     }
     public func getCreatorName() ->String{
         return self.creatorName
+    }
+    public func getImageUrl () -> String {
+        return self.imageUrl
     }
 }

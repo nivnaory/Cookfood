@@ -12,7 +12,7 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
+    var recipeController = RecipeController()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,14 +26,25 @@ class LoginViewController: UIViewController {
             if error != nil{
                 self.view.makeToast(PASSWORD_OR_EMAIL_NOT_CORRECT);
             }else{
-                
-                let  vc = self.storyboard?.instantiateViewController(identifier: "home") as!  HomeScreenViewController
-                vc.modalPresentationStyle = .fullScreen
-                self.present(vc ,animated:true);
-              
+                self.recipeController.getAllRecipesFromDB() {allrecipes, err in
+                    let  vc = self.storyboard?.instantiateViewController(identifier: "home") as!  HomeScreenViewController
+                    /*
+                       create loader view thet show loading information from db
+                     */
+                  
+                     for  recipe in allrecipes!{
+                         let url = URL(string:recipe.getImageUrl())
+                        if let data = try? Data(contentsOf:url!) {
+                                vc.images.append(UIImage(data: data)!)
+                               
+                        }
+                     }
+                    vc.allrecipes=allrecipes!
+                    vc.modalPresentationStyle = .fullScreen
+                    self.present(vc ,animated:true);
             }
-           
-        }
+          }
+       }
     }
     @IBAction func signUpPress(_ sender: Any) {
         let  vc = self.storyboard?.instantiateViewController(identifier: "signUp") as!  SignUpViewController

@@ -10,9 +10,7 @@ import UIKit
 class RecipeViewController: UIViewController {
     @IBOutlet weak var recipeImageView: UIImageView!
     @IBOutlet weak var descriptionTextView: UITextView!
-    // user = Auth.auth().currentUser;
-
-    
+    @IBOutlet weak var titleLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -10,13 +10,14 @@ import FirebaseFirestore
 import FirebaseStorage
 class RecipeController{
     var recipeDB:CollectionReference
+    typealias RecipeClosure = (Array<Recipe>?,Error?) -> Void
     //TODO:put the db as an attrabuite of this class!x
     //how to return true from setRecipeInDBfucntion
     init() {
         recipeDB=Firestore.firestore().collection("recipes");
     }
 
-    func setRecipeInDB(image:UIImage,title:String,description:String,userName:String)  -> Bool {
+    func setRecipeInDB(image:UIImage,title:String,description:String,creator:String,userEmail:String)   -> Bool {
         let identifier = UUID()
         let storageRef = FirebaseStorage.Storage.storage().reference()
         let filePath = "\("imageRecipe")/\(identifier.uuidString)"
@@ -29,7 +30,8 @@ class RecipeController{
                }else{
                 recipeImages.downloadURL { (url, error) in
                     if let downloadURL = url{
-                        self.recipeDB.addDocument(data:["creator": userName,"description":description,"title":title,"imageUrl":downloadURL.absoluteString]) {error in
+                        self.recipeDB.addDocument(data:["creator": creator,"userEmail":userEmail, "description":description,"title":title,
+                            "imageUrl":downloadURL.absoluteString]) {error in
                               if  error != nil  {
                                   print("error");
                               }else{
@@ -45,9 +47,31 @@ class RecipeController{
         }
         return true;
     }
-}
 
 
+
+
+     
+    /**
+        This function demonstrates handling an async task.
+        - Parameter userEmail
+        - Parameter completion: A completion handler to execute once the user returend from  the  db
+        */
+    func getAllRecipesFromDB(completion: @escaping RecipeClosure) ->Void{
+        recipeDB
+            .getDocuments() { (querySnapshot, err) in
+                if let err = err {
+                    print("Error getting documents: \(err)")
+                } else {
+                    var allRecipes=[Recipe]()
+                    for document in querySnapshot!.documents {
+                        allRecipes.append(Recipe(title: document.data()["title"] as! String, description:  document.data()["description"] as! String, creatorName:  document.data()["creator"] as! String, creatorEmail:  document.data()["userEmail"] as! String, imageUrl:  document.data()["imageUrl"] as! String))
+                    }
+                        completion(allRecipes,err)
+            }
+        }
+    }
+  }
 
 
 
@@ -76,8 +100,4 @@ class RecipeController{
      return true
  }
 }
-// set upload path
-//let filePath = "\(FIRAuth.auth()!.currentUser!.uid)/\("userPhoto")"
-// let metaData = F
-//metaData.contentType = "image/jpg"
 */

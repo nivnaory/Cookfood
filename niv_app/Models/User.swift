@@ -11,6 +11,7 @@ class User {
     private var  email:String
     private var  name:String
     private var recipes: [Recipe];
+
     
     init(email:String,name:String) {
         self.email=email
