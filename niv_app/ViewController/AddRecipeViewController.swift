@@ -8,6 +8,7 @@ import Firebase
 
 
 class AddRecipeViewController: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var addButton: UIButton!
@@ -56,7 +57,6 @@ class AddRecipeViewController: UIViewController,UIImagePickerControllerDelegate,
      §
     */
     @IBAction func addButtonTap(_ sender: Any)    {
-        
         //check that all field are not empty.
         if(!checkFeild()){
             return;
@@ -64,24 +64,36 @@ class AddRecipeViewController: UIViewController,UIImagePickerControllerDelegate,
           let  currentUserEmail = (Firebase.Auth.auth().currentUser?.email)!
         //get the current username from the db
         userController.getUserFromDB(userEmail:currentUserEmail) { user, error in
-            if let  error = error {
+            if error != nil {
                 self.view.makeToast(RECIPE_ERROR);
              }
               else{
-                if(!self.recipeController.setRecipeInDB(image:self.imageView.image!,title:self.titleTextField.text!, description:self.descriptionTextView.text,creator:user!.getName(),userEmail: user!.getEmail())){
-                   self.view.makeToast(RECIPE_ERROR);
-                }else{
+                self.spinner.startAnimating()
+                self.recipeController.setRecipeInDB(image:self.imageView.image!,title:self.titleTextField.text!, description:self.descriptionTextView.text,creator:user!.getName(),userEmail: user!.getEmail()){newRecipe,err in
+                    if err != nil {
+                        self.view.makeToast(RECIPE_ERROR)
+                    }else{
+                        
+                        self.recipeController.getAllRecipesFromDB(){allrecipes,err in
                     self.view.makeToast(RECIPE_SAVED);
-                    //get beck to the main page and show the new recipe
-                    
-                   
-                    
-                    
+                     let  vc = self.storyboard?.instantiateViewController(identifier: "home") as!  HomeScreenViewController
+                        
+                        //get all images from the server
+                        vc.allrecipes = allrecipes!
+                            for  recipe in allrecipes!{
+                                let url = URL(string:recipe.getImageUrl())
+                            if let data = try? Data(contentsOf:url!) {
+                                vc.images.append(UIImage(data: data)!)
+                          }
+                        }
+                     self.spinner.stopAnimating();
+                     vc.modalPresentationStyle = .fullScreen
+                     self.present(vc ,animated:true);
+                    }
                 }
             }
         }
     }
-    
     func checkFeild()-> Bool{
         if  titleTextField.text?.trimmingCharacters(in: .whitespaces)==""{
             self.view.makeToast(NO_TITLE);
@@ -95,4 +107,5 @@ class AddRecipeViewController: UIViewController,UIImagePickerControllerDelegate,
         }
         return true;
     }
+}
 }

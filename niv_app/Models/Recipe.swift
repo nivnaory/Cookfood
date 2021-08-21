@@ -12,7 +12,7 @@ class Recipe {
      private var  description:String
      private var  creatorName:String
      private var  creatorEmail:String
-    private var   imageUrl:String
+     private var   imageUrl:String
 
     
 
@@ -21,8 +21,8 @@ class Recipe {
         self.title = title
         self.description = description
         self.creatorName = creatorName
-        self.creatorEmail=creatorEmail
-        self.imageUrl=imageUrl
+        self.creatorEmail = creatorEmail
+        self.imageUrl = imageUrl
     }
 
     public func getTitle() ->String{

@@ -37,23 +37,22 @@ class SignUpViewController: UIViewController {
             if error != nil{
                 print("Eror creating user!");
             }
+            
             //user create successfuly now creaet the collection
             self.view.makeToast(USER_SUCCESSFULLY_REGISRERDS);
-            self.userController.setUserInDB(email: email, username: username)
-            let  vc = self.storyboard?.instantiateViewController(identifier: "login") as!  LoginViewController
-            vc.modalPresentationStyle = .fullScreen
-            self.present(vc ,animated:true);
-            
-        }
+            self.userController.setUserInDB(email: email, username: username) {user,error in
+                if error != nil{
+                    self.view.makeToast(CONNOT_CREATE_USER)
+                }else{
+             self.view.makeToast(PASSWORD_LENGTH_ERROR_MASSAGE);
+             let  vc = self.storyboard?.instantiateViewController(identifier: "login") as!  LoginViewController
+             vc.modalPresentationStyle = .fullScreen
+             self.present(vc ,animated:true);
+         }
+       }
     }
-     else{
-        self.view.makeToast(PASSWORD_LENGTH_ERROR_MASSAGE);
-        
-    }
-     
-   
-        
-    }
+  }
+}
 
     func validateFiled()-> Bool{
         if emailTextField.text?.trimmingCharacters(in: .whitespaces)=="" ||
@@ -80,7 +79,6 @@ class SignUpViewController: UIViewController {
         }, completion: {(isCompleted) in
             toastLabel.removeFromSuperview()
         })
-    }
-}
-
+     }
+ }
 

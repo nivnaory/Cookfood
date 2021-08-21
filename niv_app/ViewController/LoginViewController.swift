@@ -31,11 +31,10 @@ class LoginViewController: UIViewController {
                 self.spinner.startAnimating()
                 self.recipeController.getAllRecipesFromDB() {allrecipes, err in
                     let  vc = self.storyboard?.instantiateViewController(identifier: "home") as!  HomeScreenViewController
-                    
                         for  recipe in allrecipes!{
-                         let url = URL(string:recipe.getImageUrl())
+                            let url = URL(string:recipe.getImageUrl())
                         if let data = try? Data(contentsOf:url!) {
-                                vc.images.append(UIImage(data: data)!)
+                            vc.images.append(UIImage(data: data)!)
                                
                         }
                      }

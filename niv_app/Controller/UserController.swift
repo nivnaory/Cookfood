@@ -15,36 +15,15 @@ class UserController{
     }
     
     
-    func setUserInDB(email:String,username:String){
+    func setUserInDB(email:String,username:String,completion: @escaping UserClosure){
         self.userDB.addDocument(data:["username": username,"Email":email]){(error) in
         if error != nil {
-                    print("Errror");
+                    print(error!);
                 }else{
-                    print("trasition to home screen");
+                  completion(User(email: email, name:username),error)
             }
         }
     }
-   
-    /*
-    func getUserFromDB(userEmail:String)   ->User{ 
-        let user=User(email: "", name:"")
-        self.userDB.whereField("Email", isEqualTo: userEmail)
-            .getDocuments() { (querySnapshot, err)  in
-                if let err = err {
-                    print("Error getting documents: \(err)")
-                } else {
-                    for document in querySnapshot!.documents {
-                        let email=document.data()["Email"]! as? String
-                        let name=document.data()["username"]! as? String
-                        user.setName(name: name!)
-                        user.setEmail(email: email!)
-                }
-            }
-        }
-        return user
-    }
-*/
-    
     /**
         This function demonstrates handling an async task.
         - Parameter userEmail
