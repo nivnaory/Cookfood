@@ -72,6 +72,11 @@ class AddRecipeViewController: UIViewController,UIImagePickerControllerDelegate,
                    self.view.makeToast(RECIPE_ERROR);
                 }else{
                     self.view.makeToast(RECIPE_SAVED);
+                    //get beck to the main page and show the new recipe
+                    
+                   
+                    
+                    
                 }
             }
         }

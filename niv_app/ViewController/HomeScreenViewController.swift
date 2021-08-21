@@ -38,6 +38,7 @@ class HomeScreenViewController: UIViewController,UITableViewDelegate,UITableView
         vc.recipeImageView.image = images[indexPath.row]
         vc.titleLabel.text = allrecipes[indexPath.row].getTitle()
         vc.descriptionTextView.text=allrecipes[indexPath.row].getDescription()
+        vc.creatorLabel.text=allrecipes[indexPath.row].getCreatorName()
      }
     }
     

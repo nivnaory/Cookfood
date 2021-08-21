@@ -8,6 +8,7 @@
 import UIKit
 
 class RecipeViewController: UIViewController {
+    @IBOutlet weak var creatorLabel: UILabel!
     @IBOutlet weak var recipeImageView: UIImageView!
     @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var titleLabel: UILabel!
